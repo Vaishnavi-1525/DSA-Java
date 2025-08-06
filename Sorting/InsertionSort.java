@@ -51,7 +51,7 @@ public class InsertionSort {
 
         scanner.close();
 
-//Time Complexity - O(n)
-//Space Complexity - O(1)
+//Time Complexity - O(n) - in Best Case
+//Space Complexity - O(1) - in-place sorting
     }
 }
