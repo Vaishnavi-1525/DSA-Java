@@ -56,5 +56,9 @@ public class SelectionSort {
             System.out.print(arr[i] + " ");
         }
         System.out.println();
+
+        
+       //Time Complexity: - O(n²) - Best Case
+       //Space Complexity: O(1) — In-place sorting
     }
 }
