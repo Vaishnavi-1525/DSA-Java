@@ -4,10 +4,10 @@ Java implementations of core Data Structures and Algorithms
 
 This repository contains Java implementations of core Data Structures and Algorithms including:
 
-- Sorting Algorithms (Bubble Sort, Insertion Sort, etc.)
-- Searching Algorithms
-- Linked Lists
+- Sorting Algorithms (Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort, etc.)
+- Searching Algorithms (Linear Search, Binary Search)
 - Stacks and Queues
+- Linked Lists
 - Trees and Graphs
 
 ## How to Run
