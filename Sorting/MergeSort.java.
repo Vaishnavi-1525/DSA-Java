@@ -1,0 +1,67 @@
+public class Main {
+
+    // Recursive function to divide the array into halves
+    public static void divide(int arr[], int start, int end) {
+        if (start >= end) {
+            return; // base case
+        }
+
+        int mid = (start + end) / 2;
+        divide(arr, start, mid);      // divide left half
+        divide(arr, mid + 1, end);    // divide right half
+        conquer(arr, start, mid, end); // merge the two halves
+    }
+
+    // Function to merge two sorted halves
+    public static void conquer(int arr[], int start, int mid, int end) {
+        int[] merged = new int[end - start + 1];
+
+        int index1 = start;     // pointer for left half
+        int index2 = mid + 1;   // pointer for right half
+        int x = 0;              // pointer for merged array
+
+        // Merge the elements in sorted order
+        while (index1 <= mid && index2 <= end) {
+            if (arr[index1] <= arr[index2]) {
+                merged[x++] = arr[index1++];
+            } else {
+                merged[x++] = arr[index2++];
+            }
+        }
+
+        // Copy remaining elements of left half
+        while (index1 <= mid) {
+            merged[x++] = arr[index1++];
+        }
+
+        // Copy remaining elements of right half
+        while (index2 <= end) {
+            merged[x++] = arr[index2++];
+        }
+
+        // Copy merged array back to original array
+        for (int i = 0; i < merged.length; i++) {
+            arr[start + i] = merged[i];
+        }
+    }
+
+    // Main method to run the program
+    public static void main(String[] args) {
+        int[] arr = {7, 12, 9, 11, 3};
+
+        System.out.println("Array Before Sorting:");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+
+        divide(arr, 0, arr.length - 1);
+
+        System.out.println("\nArray After Sorting:");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        } 
+
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
+    }
+}
