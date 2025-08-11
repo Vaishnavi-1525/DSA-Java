@@ -27,7 +27,7 @@ Every program in this repository includes time and space complexity analysis, so
 - ✅ Real-world case studies using DSA
 
 
-##🛠 How to Run
+## 🛠 How to Run
 -📥 Clone the repository:
 
 -git clone https://github.com/DSA-Java.git
