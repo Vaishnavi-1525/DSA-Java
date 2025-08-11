@@ -31,7 +31,7 @@ Every program in this repository includes time and space complexity analysis, so
 -📥 Clone the repository:
 
 -git clone https://github.com/DSA-Java.git
--🖥 Open in any Java IDE: IntelliJ, Eclipse, VS Code, etc.
+- 🖥 Open in any Java IDE: IntelliJ, Eclipse, VS Code, etc.
 
 -📂 Navigate to the desired package or class.
 
