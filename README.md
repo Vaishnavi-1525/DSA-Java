@@ -28,16 +28,16 @@ Every program in this repository includes time and space complexity analysis, so
 
 
 ## 🛠 How to Run
--📥 Clone the repository:
+- 📥 Clone the repository:
 
--git clone https://github.com/DSA-Java.git
+- git clone https://github.com/DSA-Java.git
 - 🖥 Open in any Java IDE: IntelliJ, Eclipse, VS Code, etc.
 
--📂 Navigate to the desired package or class.
+- 📂 Navigate to the desired package or class.
 
--▶ Compile & Run using Main.java or any individual algorithm class.
+- ▶ Compile & Run using Main.java or any individual algorithm class.
 
--🧪 Experiment by modifying the code to deepen your understanding.
+- 🧪 Experiment by modifying the code to deepen your understanding.
 
 
 
