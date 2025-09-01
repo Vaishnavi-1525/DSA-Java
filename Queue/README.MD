@@ -6,10 +6,24 @@ Queues are widely used in scheduling tasks, handling requests, printer spooling,
 
 ---
 
-## 📌 Contents
-- Simple Queue (Array Implementation)  
-- ⏱ Time & Space Complexity  
-- Sample Usage  
+## 🧩 Types of Queue  
+
+1. **Simple Queue**  
+   - Follows FIFO (First In, First Out) order.  
+   - Insertion happens at the rear, deletion at the front.  
+
+2. **Circular Queue**  
+   - The last position connects back to the first, forming a circle.  
+   - Efficient memory utilization as unused spaces are reused.  
+
+3. **Priority Queue**  
+   - Each element has a priority assigned.  
+   - Higher-priority elements are dequeued before lower-priority ones.  
+
+4. **Double-Ended Queue (Deque)**  
+   - Allows insertion and deletion at both front and rear ends.  
+   - More flexible compared to a simple queue.  
+
 
 ---
 
