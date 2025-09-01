@@ -45,9 +45,4 @@ Queues are widely used in scheduling tasks, handling requests, printer spooling,
 - **Display**: Prints all elements in the queue from front to rear.  
 - Properly handles **empty** and **full** queue conditions.  
 
----
 
-## 🚀 How to Run
-1. Compile the program:
-```bash
-javac SimpleQueue.java
