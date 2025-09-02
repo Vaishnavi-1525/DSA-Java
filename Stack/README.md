@@ -53,7 +53,7 @@ Stacks are widely used in **function calls, expression evaluation, undo/redo fea
 
 
 ## 🖥️ Sample Output
-
+```
  Enter the size of the stack: 5
 
  --- Stack Menu ---
@@ -79,4 +79,5 @@ Stacks are widely used in **function calls, expression evaluation, undo/redo fea
  
   | 20 |
   | 10 |
+```
  -----
