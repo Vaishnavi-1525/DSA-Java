@@ -62,14 +62,21 @@ Stacks are widely used in **function calls, expression evaluation, undo/redo fea
  3. Peek
  4. Display
  5. Exit
+    
  Enter your choice: 1
+ 
  Enter element to push: 10
  10 pushed into stack.
+ 
  Enter your choice: 1
+ 
  Enter element to push: 20
  20 pushed into stack.
+ 
  Enter your choice: 4
+ 
  Stack elements (top -> bottom):
+ 
   | 20 |
   | 10 |
  -----
