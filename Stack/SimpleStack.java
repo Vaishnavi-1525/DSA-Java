@@ -1,66 +1,67 @@
 import java.util.Scanner;
 
-// Simple Stack program using array
-public class SimpleStack {
+// Improved Stack program using array
+public class ImprovedStack {
 
-    // Stack data
-    private int arr[];       // Array to store stack elements
-    private int top;         // Top of stack
-    private int capacity;    // Maximum size of stack
+    private int arr[];    // Array to store stack elements
+    private int top;      // Top of stack
+    private int capacity; // Maximum size of stack
 
     // Constructor to initialize stack
-    public SimpleStack(int size) {
+    public ImprovedStack(int size) {
         arr = new int[size];
         capacity = size;
         top = -1;
     }
 
-    // Function to add element (Push) Time Complexity - O(1)
+    // Function to add element (Push) - Time Complexity: O(1)
     public void push(int x) {
         if (top == capacity - 1) {
-            System.out.println("Stack Overflow (No space to add)");
+            System.out.println("Stack Overflow! Cannot add element.");
         } else {
             arr[++top] = x;
-            System.out.println(x + " pushed into stack");
+            System.out.println(x + " pushed into stack.");
         }
     }
 
-    // Function to remove element (Pop) Time Complexity - O(1)
+    // Function to remove element (Pop) - Time Complexity: O(1)
     public void pop() {
         if (top == -1) {
-            System.out.println("Stack Underflow (No element to remove)");
+            System.out.println("Stack Underflow! No element to remove.");
         } else {
-            System.out.println("Popped element is: " + arr[top--]);
+            System.out.println("Popped element: " + arr[top--]);
         }
     }
 
-    // Function to see top element (Peek) Time Complexity - O(1)
+    // Function to see top element (Peek) - Time Complexity: O(1)
     public void peek() {
         if (top == -1) {
-            System.out.println("Stack is Empty");
+            System.out.println("Stack is empty.");
         } else {
-            System.out.println("Top element is: " + arr[top]);
+            System.out.println("Top element: " + arr[top]);
         }
     }
 
-    // Function to display stack elements Time Complexity - O(n)
+    // Function to display stack visually - Time Complexity: O(n)
     public void display() {
         if (top == -1) {
-            System.out.println("Stack is Empty");
+            System.out.println("Stack is empty.");
         } else {
-            System.out.println("Stack Elements:");
+            System.out.println("Stack elements (top -> bottom):");
             for (int i = top; i >= 0; i--) {
-                System.out.println(arr[i]);
+                System.out.println("| " + arr[i] + " |");
             }
+            System.out.println("-----");
         }
     }
 
-    // Main menu
+    // Main method with menu
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        // Create stack of size 5
-        SimpleStack stack = new SimpleStack(5);
+        System.out.print("Enter the size of the stack: ");
+        int size = sc.nextInt();
+        ImprovedStack stack = new ImprovedStack(size);
 
         int choice;
         do {
@@ -71,41 +72,32 @@ public class SimpleStack {
             System.out.println("4. Display");
             System.out.println("5. Exit");
             System.out.print("Enter your choice: ");
-            choice = s.nextInt();
+            choice = sc.nextInt();
 
             switch (choice) {
                 case 1:
-                    System.out.print("Enter element: ");
-                    int element = s.nextInt();
+                    System.out.print("Enter element to push: ");
+                    int element = sc.nextInt();
                     stack.push(element);
                     break;
-
                 case 2:
                     stack.pop();
                     break;
-
                 case 3:
                     stack.peek();
                     break;
-
                 case 4:
                     stack.display();
                     break;
-
                 case 5:
                     System.out.println("Exiting... Thank you!");
                     break;
-
                 default:
-                    System.out.println("Invalid choice. Please try again.");
+                    System.out.println("Invalid choice! Try again.");
             }
         } while (choice != 5);
 
-        s.close();
-
-
-      //Space Complexity → O(n)
-
-      
+        sc.close();
+        // Space Complexity: O(n)
     }
 }
