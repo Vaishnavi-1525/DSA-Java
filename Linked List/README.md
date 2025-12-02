@@ -38,10 +38,15 @@ Linked Lists provide efficient **insertions** and **deletions**, especially in t
 ## ⚡ Operations & Complexity
 
 |   Operation    |Singly |	Doubly |	Description     |
+
 |-----------------------------------------------------|
+
 |Insert at end   |  O(n) |   O(n)	 | Add node at tail |
+
 |Delete by value |	O(n) |	 O(n)	 | Remove a specific node |
+
 |Search	         |  O(n) |   O(n)	 | Find value in the list |
+
 |Display	       |  O(n) |   O(n)	 | Print all nodes |
 
 ---
