@@ -8,19 +8,19 @@ Queues are widely used in scheduling tasks, handling requests, printer spooling,
 
 ## 🧩 Types of Queue  
 
-1. **Simple Queue**  
+1.  [Simple Queue](SimpleQueue.java)  
    - Follows FIFO (First In, First Out) order.  
    - Insertion happens at the rear, deletion at the front.  
 
-2. **Circular Queue**  
+2.  [Circular Queue](CircularQueue.java) 
    - The last position connects back to the first, forming a circle.  
    - Efficient memory utilization as unused spaces are reused.  
 
-3. **Priority Queue**  
+3.  [Priority Queue](PriorityQueue.java)  
    - Each element has a priority assigned.  
    - Higher-priority elements are dequeued before lower-priority ones.  
 
-4. **Double-Ended Queue (Deque)**  
+4.  [Double-Ended Queue (Deque)](DoubleEndedQueue.java) 
    - Allows insertion and deletion at both front and rear ends.  
    - More flexible compared to a simple queue.  
 
@@ -29,7 +29,7 @@ Queues are widely used in scheduling tasks, handling requests, printer spooling,
 
 ## ⚡ Operations & Complexity
 
-| Operation | Time Complexity | Description |
+| Operation | Time Complexity| Description |
 |-----------|----------------|-------------|
 | Enqueue   | O(1)           | Add element at the rear |
 | Dequeue   | O(1)           | Remove element from the front |
