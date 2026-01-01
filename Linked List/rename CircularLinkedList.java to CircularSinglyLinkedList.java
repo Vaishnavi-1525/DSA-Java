@@ -1,4 +1,4 @@
-// Circular Linked List in Java
+// Circular Singly Linked List in Java
 class Node {
     int data;        // The value of the node
     Node next;       // Pointer to the next node
@@ -9,7 +9,7 @@ class Node {
     }
 }
 
-class CircularLinkedList {
+class CircularSinglyLinkedList {
     Node head;   // Head of the list
 
     // Insert a new node at the end
