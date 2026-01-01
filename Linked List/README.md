@@ -9,7 +9,7 @@ Linked Lists provide efficient **insertions** and **deletions**, especially in t
 
 ## 🧩 Types of Linked List
 
-1. [Singly Linked List](SimpleQueue.java)
+1. [Singly Linked List](SinglyLinkedList.java)
 
 - Each node has data + next pointer
 
@@ -25,7 +25,7 @@ Linked Lists provide efficient **insertions** and **deletions**, especially in t
 
 - Easier deletion and insertion at both ends
 
-3. [Circular Linked List](#)
+3. [Circular Singly Linked List](CircularSinglyLinkedList.java)
 
 - Last node points back to the head
 
@@ -51,8 +51,10 @@ Linked Lists provide efficient **insertions** and **deletions**, especially in t
 
 - Singly Linked List → O(n)
 
-- Doubly Linked List → O(n) extra space due to prev pointer
+- Doubly Linked List → O(n) 
 
+- Circular Singly Linked List → O(1)
+  
 ---
 
 ## 📝 Notes
